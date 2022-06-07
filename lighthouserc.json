@@ -1,0 +1,23 @@
+{
+    "ci":{
+        "assert":{
+            "preset":"lighthouse:no-pwa",
+            "assertions":{
+                "categories:performance":[
+                    "error",
+                    {
+                        "aggregationMethod":"optimistic",
+                        "minScore":0.20
+                    }
+                ],
+                "categories:accessibility":[
+                    "warning",
+                    {
+                        "aggregationMethod":"optimistic",
+                        "minScore":0.90
+                    }
+                ]
+            }
+        }
+    }
+}
