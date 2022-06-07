@@ -7,14 +7,14 @@
                     "error",
                     {
                         "aggregationMethod":"optimistic",
-                        "minScore":0.20
+                        "minScore":0.60
                     }
                 ],
                 "categories:accessibility":[
                     "warning",
                     {
                         "aggregationMethod":"optimistic",
-                        "minScore":0.90
+                        "minScore":0.98
                     }
                 ]
             }
