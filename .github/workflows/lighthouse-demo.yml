@@ -6,6 +6,8 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v9
         with:
@@ -13,3 +15,5 @@ jobs:
             https://hash.green/
             https://hash.green/dex/XCH-USDS
           uploadArtifacts: true
+          temporaryPublicStorage: true
+          configPath: './lighthouserc.json'
