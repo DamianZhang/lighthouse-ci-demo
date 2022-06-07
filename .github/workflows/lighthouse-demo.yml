@@ -11,5 +11,6 @@ jobs:
         with:
           urls: |
             https://hash.green/
+            https://hash.green/dex
             https://hash.green/dex/XCH-USDS
           uploadArtifacts: true
