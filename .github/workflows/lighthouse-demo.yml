@@ -15,5 +15,5 @@ jobs:
             https://hash.green/
             https://hash.green/dex/XCH-USDS
           uploadArtifacts: true
-          temporaryPublicStorage: true
+          # temporaryPublicStorage: true
           # configPath: './lighthouserc.json'
