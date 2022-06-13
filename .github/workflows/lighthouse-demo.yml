@@ -15,7 +15,7 @@ jobs:
             https://hash.green/
             https://hash.green/dex/XCH-USDS
           # uploadArtifacts: true
-          serverBaseUrl: 'https://salty-thicket-31726.herokuapp.com/'
-          serverToken: '8f4cd9b3-59f2-4b13-80f8-912eecc80dee'
+          serverBaseUrl: ${{ secrets.LHCI_SERVER_URL }}
+          serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
           # temporaryPublicStorage: true
           # configPath: './lighthouserc.json'
