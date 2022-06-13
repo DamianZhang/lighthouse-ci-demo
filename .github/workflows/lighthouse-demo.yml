@@ -14,7 +14,7 @@ jobs:
           urls: |
             https://hash.green/
             https://hash.green/dex/XCH-USDS
-          uploadArtifacts: true
+          # uploadArtifacts: true
           serverBaseUrl: 'https://salty-thicket-31726.herokuapp.com/'
           serverToken: '8f4cd9b3-59f2-4b13-80f8-912eecc80dee'
           # temporaryPublicStorage: true
