@@ -1,0 +1,21 @@
+name: Lighthouse Tests
+
+on:
+  push:
+    branches:
+      - feature/zed-710
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+      - name: Audit URLs using Lighthouse and upload reports to private lhci server
+        uses: treosh/lighthouse-ci-action@v9
+        with:
+          urls: |
+            https://hash.green/
+            https://hash.green/dex/XCH-USDS
+          serverBaseUrl: ${{ secrets.LHCI_SERVER_URL }}
+          serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
