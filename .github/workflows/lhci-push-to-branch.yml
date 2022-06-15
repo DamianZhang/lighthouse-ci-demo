@@ -1,5 +1,5 @@
 name: Lighthouse Tests
-# test with no slash
+# test with slash
 
 on:
   push:
