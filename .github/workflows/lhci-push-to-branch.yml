@@ -3,7 +3,7 @@ name: Lighthouse Tests
 on:
   push:
     branches:
-      - feature/zed-710
+      - test/no-slash
 
 jobs:
   lighthouse:
