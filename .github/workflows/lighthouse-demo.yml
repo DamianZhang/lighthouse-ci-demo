@@ -18,7 +18,7 @@ jobs:
             https://hash.green/
             https://hash.green/dex/XCH-USDS
           # uploadArtifacts: true
-          serverBaseUrl: ${{ secrets.LHCI_SERVER_URL }}
-          serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
           # temporaryPublicStorage: true
           # configPath: './lighthouserc.json'
+          serverBaseUrl: ${{ secrets.LHCI_SERVER_URL }}
+          serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
