@@ -1,9 +1,9 @@
-name: Lighthouse CI Demo
+name: Lighthouse Tests
 
 on:
   push:
     branches:
-      - main
+      - feature/zed-710
 
 jobs:
   lighthouse:
@@ -11,14 +11,11 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
-      - name: Audit URLs using Lighthouse
+      - name: Audit URLs using Lighthouse and upload reports to private lhci server
         uses: treosh/lighthouse-ci-action@v9
         with:
           urls: |
             https://hash.green/
             https://hash.green/dex/XCH-USDS
-          uploadArtifacts: true
           serverBaseUrl: ${{ secrets.LHCI_SERVER_URL }}
           serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
-          # temporaryPublicStorage: true
-          # configPath: './lighthouserc.json'
